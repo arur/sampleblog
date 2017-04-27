@@ -7,7 +7,11 @@ const postSchema = new Schema({
     type: String,
     required: true
   },
-  description: String
+  description: String,
+  posted: {
+    type: Date,
+    default: Date.now
+  }
 });
 
 const Post = mongoose.model('Post', postSchema);

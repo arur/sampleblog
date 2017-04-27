@@ -25,7 +25,7 @@
       $http
         .post("/api/posts", JSON.stringify(post))
         .success(function(post){ 
-          $scope.post='post';
+          $scope.post={};
         })
     }
   }
