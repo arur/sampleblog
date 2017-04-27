@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang= "en" ng-app="PostApp">
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
+    <script src ="app.js"></script>
+    <meta charset="UTF-8">
+    <title>Simple blog</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container" ng-controller="PostController">
+        <h1>Simple Blog</h1>
+        <div>
+            <input type="text" ng-model="post.title" /><br>
+            <textarea type="text" ng-model="post.description"></textarea><br>
+            <button ng-click="createPost(post)">Create new post</button>
+        </div>
+        <a href="/posts.html">See all posts</a>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
